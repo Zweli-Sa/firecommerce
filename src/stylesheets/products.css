@@ -1,0 +1,38 @@
+.product{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.product p{
+    min-height: 3rem;
+}
+.product-img{
+    height: 200px;
+    width: 150px;
+}
+
+.product:hover .product-actions{
+    opacity: 1;
+}
+
+.product-actions{
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+top: 0;
+left: 0;
+right: 0;
+opacity: 0;
+height: 100%;
+background-color: rgba(0,0,0,0.8);
+color: white;
+font-weight: bold !important;
+}
+
+.product-info-img{
+    height: 70vh;
+}
+
+.order{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

@@ -1,0 +1,83 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.navbar{
+    background-color: #003F5C !important;
+ 
+}
+.navbar-brand{
+    color: white !important;
+    font-weight: bold;
+}
+.nav-link{
+    color: white !important;
+}
+
+.content{
+    padding-top: 80px;
+}
+.Footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #003F5C;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+button{
+    background-color: #003F5C;
+    box-shadow: none ;
+    border: 1px solid white;
+    color: #fff;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: tomato;
+}
+
+.total-amount{
+    background-color: #D2B48C;
+    padding: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-weight:bold;
+}
+.total-amount:hover{
+    background-color: #003F5C;
+    color: #fff;
+}
+
+.loader{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.spinner-border{
+    height: 100px;
+    width: 100px;
+}
+a{
+    text-decoration: none;
+}
+
+.uncontrolled-tab-example-tab-products{
+    color: black !important;
+}
+
+.nav-item button{
+    color:  black !important;
+}
+.nav-tabs{
+    background-color: aliceblue;
+}
