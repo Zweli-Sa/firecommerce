@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import Layout from "../components/Layout";
 import fireDB from "../fireConfig";
-
+import { PayPalButton } from "react-paypal-button-v2";
 
 
 function CartPage() {
@@ -170,6 +170,31 @@ function CartPage() {
                 </Modal.Footer>
             </Modal>
 
+            <div >
+
+<input
+    type="number"
+    value={totalAmount}
+    onChange={(e) => setTotalAmount(e.target.value)}
+/>
+
+<PayPalButton
+    options={{
+        clientId:
+            "ARhF2Yw8zRq14eftim5dIitGQs6acykO_xl0wFQkxQJZXvxjSY6c1lIHTqjE7GPBsWEVkJXPdgwznMT-",
+        currency: "USD",
+    }}
+
+    amount={totalAmount}
+    // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
+    onSuccess={(details, data) => {
+        alert("Transaction completed by " + details.payer.name.given_name);
+
+        // OPTIONAL: Call your server to save the transaction
+        console.log({ details, data });
+    }}
+/>
+</div>            
 
         </Layout>
     )
