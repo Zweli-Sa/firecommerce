@@ -151,7 +151,7 @@ function AdminPage() {
                             {products.map(item => {
                                 return <tr key={item.id}>
 
-                                    <td><img src={item.imageUrl} height="80" width="80" /></td>
+                                    <td><img src={item.imageUrl} height="80" width="80" alt={item.name} /></td>
 
                                     <td>{item.name}</td>
                                     <td>{item.price}</td>
@@ -227,7 +227,7 @@ function AdminPage() {
                         {order.cartItems.map(item => {
                             return <tr key={item.id}>
 
-                                <td><img src={item.imageUrl} height="80" width="80" /></td>
+                                <td><img src={item.imageUrl} height="80" width="80" alt={item.name} /></td>
 
                                 <td>{item.name}</td>
                                 <td>{item.price}</td>
